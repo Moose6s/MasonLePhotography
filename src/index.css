@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.small {
+    @apply flex flex-col items-center mx-10 my-5; 
+}
+
+.medium {
+    @apply flex-row items-center mx-10 my-5;
+}
+
+.textDesc {
+    @apply text-center;
+}
+
+.default {
+    @apply flex flex-col m-3 mt-10 items-center
+}
+
+.style {
+    @apply bg-backgroundColor
+}
+
+.filmBorder{
+    @apply flex flex-col w-[vw] items-center mb-10 border-t-[3px] border-BorderGrey pt-10
+}
+
+.photos1 {
+    @apply md:flex-row md:w-[65vw] p-10 border-t-[3px] border-BorderGrey justify-center
+}
+
+.photos12 {
+    @apply md:flex-row-reverse md:w-[65vw] p-10 border-t-[3px] border-BorderGrey justify-center
+}
+
+.photos2 {
+    @apply w-[60vw] md:w-[20vw]
+}
+
+.photos3{
+    @apply flex flex-col items-center md:w-[25vw]
+}
+
+.photos32{
+    @apply flex flex-col items-center md:w-[25vw]
+}
+
+@layer base {
+    p {
+        @apply text-LightGreyFont
+    }
+    h1 {
+        @apply text-GreyFont font-montserrat font-semibold text-3xl
+    }
+    h2 {
+        @apply text-MiddleGreyFont font-montserrat font-semibold text-3xl mt-5 mb-3
+    }
+}
